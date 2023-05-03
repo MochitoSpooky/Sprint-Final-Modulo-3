@@ -15,7 +15,7 @@ def crear_cuenta(usuario):
     #crear contraseña con requerimientos solicitados, mayusculas, minusculas y numeros
     password = ''.join(random.choices(alfabeto, k=8))
     print(f"La contraseña de {usuario} es: {password}")
-    #solicitar numero telefonico con al menos 8 digitos
+    #solicitar numero telefonico de 8 digitos
     while True:
         numero = input(f"Ingrese el numero telefonico de {usuario}: ")
         if numero.isdigit() and len(numero) == 8:
